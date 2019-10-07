@@ -6,8 +6,8 @@ namespace LargeDatasetML
     {
         static void Main(string[] args)
         {
-            ModelBuilder.CreateModel();
-            return;
+            //ModelBuilder.CreateModel();
+            //return;
             var items = ModelBuilder.GetSampleData(2);
             foreach(var item in items)
             {

@@ -26,7 +26,7 @@ namespace LargeDatasetML
                                               hasHeader: true,
                                               separatorChar: ',',
                                               allowQuoting: true,
-                                              allowSparse: true);
+                                              allowSparse: false);
             var sampleForPredictions = mlContext.Data.CreateEnumerable<ModelInput>(trainingDataView, false).Take(Count);
             return sampleForPredictions;
         }
